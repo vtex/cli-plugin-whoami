@@ -1,6 +1,6 @@
 import chalk from 'chalk'
 
-import { logger, SessionManager, createWorkspacesClient, WorkspaceResponse } from 'vtex'
+import { logger, SessionManager, createWorkspacesClient, WorkspaceResponse, ColorifyConstants, COLORS } from 'vtex'
 
 const workspaceState = (meta: WorkspaceResponse) => (meta.production ? 'production' : 'dev')
 
@@ -27,16 +27,16 @@ export const greeting = async (): Promise<string[]> => {
     let state = await getWorkspaceState(account, workspace)
 
     if (!state) {
-      loggedMessage = `${chalk.red('Not logged in')}. Previously logged into`
+      loggedMessage = `${chalk.hex(COLORS.YELLOW)('Not logged in')}. Previously logged into`
       state = ''
     }
 
     return [
-      `${loggedMessage} ${chalk.blue(account)} as ${chalk.green(userLogged)} at ${chalk.yellowBright(
+      `${loggedMessage} ${ColorifyConstants.ID(account)} as ${ColorifyConstants.ID(userLogged)} at ${chalk.hex(COLORS.YELLOW)(
         state
-      )}workspace ${chalk.green(workspace)}`,
+      )}workspace ${ColorifyConstants.ID(workspace)}`,
     ]
   }
 
-  return ['Welcome to VTEX I/O', `Login with ${chalk.green('vtex login')} ${chalk.blue('<account>')}`]
+  return [`${chalk.bold('Welcome to VTEX IO')}`, `Log in by running ${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex login')} ${ColorifyConstants.ID('<account-name>')}`]
 }
