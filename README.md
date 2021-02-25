@@ -18,18 +18,18 @@ For more information, read [Ocliff Docs](https://oclif.io/docs/introduction).
 ![npm](https://img.shields.io/npm/v/@vtex/cli-plugin-template)
 
 <!-- toc -->
-* [VTEX CLI Plugin Template](#vtex-cli-plugin-template)
+* [VTEX CLI Plugin Whoami](#vtex-cli-plugin-whoami)
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @vtex/cli-plugin-template
+$ npm install -g @vtex/cli-plugin-whoami
 $ vtex COMMAND
 running command...
 $ vtex (-v|--version|version)
-@vtex/cli-plugin-template/0.0.0 linux-x64 node-v12.18.4
+@vtex/cli-plugin-whoami/0.1.0 linux-x64 node-v12.20.2
 $ vtex --help [COMMAND]
 USAGE
   $ vtex COMMAND
@@ -38,27 +38,24 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`vtex hello [FILE]`](#vtex-hello-file)
+* [`vtex whoami`](#vtex-whoami)
 
-## `vtex hello [FILE]`
+## `vtex whoami`
 
-describe the command here
+Prints the current [93maccount[39m, [93mworkspace[39m, environment, and login details.
 
 ```
 USAGE
-  $ vtex hello [FILE]
+  $ vtex whoami
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-  -v, --verbose    Show debug level logs
-  --trace          Ensure all requests to VTEX IO are traced
+  -h, --help     show CLI help
+  -v, --verbose  Show debug level logs
+  --trace        Ensure all requests to VTEX IO are traced
 
 EXAMPLE
-  $ oclif-example hello
-  hello world from ./src/hello.ts!
+  vtex whoami
 ```
 
-_See code: [build/commands/hello.ts](https://github.com/vtex/cli-plugin-template/blob/v0.0.0/build/commands/hello.ts)_
+_See code: [build/commands/whoami.ts](https://github.com/vtex/cli-plugin-whoami/blob/v0.1.0/build/commands/whoami.ts)_
 <!-- commandsstop -->
