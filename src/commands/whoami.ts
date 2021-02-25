@@ -1,10 +1,10 @@
-import { CustomCommand } from 'vtex'
+import { CustomCommand, ColorifyConstants } from 'vtex'
 import authWhoami from '../modules/auth/whoami'
 
 export default class WhoAmI extends CustomCommand {
-  static description = 'See your credentials current status'
+  static description = `Prints the current ${ColorifyConstants.ID('account')}, ${ColorifyConstants.ID('workspace')}, environment, and login details.`
 
-  static examples = ['vtex whoami']
+  static examples = [`${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex whoami')}`]
 
   static flags = {
     ...CustomCommand.globalFlags,
