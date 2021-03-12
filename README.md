@@ -29,7 +29,7 @@ $ npm install -g @vtex/cli-plugin-whoami
 $ vtex COMMAND
 running command...
 $ vtex (-v|--version|version)
-@vtex/cli-plugin-whoami/0.1.0 linux-x64 node-v12.20.2
+@vtex/cli-plugin-whoami/0.1.0 linux-x64 node-v12.21.0
 $ vtex --help [COMMAND]
 USAGE
   $ vtex COMMAND
@@ -42,7 +42,7 @@ USAGE
 
 ## `vtex whoami`
 
-Prints the current [93maccount[39m, [93mworkspace[39m, environment, and login details.
+Prints the current account, workspace, environment, and login details.
 
 ```
 USAGE
