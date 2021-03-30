@@ -32,11 +32,16 @@ export const greeting = async (): Promise<string[]> => {
     }
 
     return [
-      `${loggedMessage} ${ColorifyConstants.ID(account)} as ${ColorifyConstants.ID(userLogged)} at ${chalk.hex(COLORS.YELLOW)(
-        state
-      )}workspace ${ColorifyConstants.ID(workspace)}`,
+      `${loggedMessage} ${ColorifyConstants.ID(account)} as ${ColorifyConstants.ID(userLogged)} at ${chalk.hex(
+        COLORS.YELLOW
+      )(state)}workspace ${ColorifyConstants.ID(workspace)}`,
     ]
   }
 
-  return [`${chalk.bold('Welcome to VTEX IO')}`, `Log in by running ${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex login')} ${ColorifyConstants.ID('<account-name>')}`]
+  return [
+    `${chalk.bold('Welcome to VTEX IO')}`,
+    `Log in by running ${ColorifyConstants.COMMAND_OR_VTEX_REF('vtex login')} ${ColorifyConstants.ID(
+      '<account-name>'
+    )}`,
+  ]
 }
