@@ -29,7 +29,7 @@ $ npm install -g @vtex/cli-plugin-whoami
 $ vtex COMMAND
 running command...
 $ vtex (-v|--version|version)
-@vtex/cli-plugin-whoami/0.2.0 linux-x64 node-v12.21.0
+@vtex/cli-plugin-whoami/0.2.1-beta linux-x64 node-v12.21.0
 $ vtex --help [COMMAND]
 USAGE
   $ vtex COMMAND
@@ -57,5 +57,5 @@ EXAMPLE
   vtex whoami
 ```
 
-_See code: [build/commands/whoami.ts](https://github.com/vtex/cli-plugin-whoami/blob/v0.2.0/build/commands/whoami.ts)_
+_See code: [build/commands/whoami.ts](https://github.com/vtex/cli-plugin-whoami/blob/v0.2.1-beta/build/commands/whoami.ts)_
 <!-- commandsstop -->
