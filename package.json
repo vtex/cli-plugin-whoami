@@ -1,7 +1,7 @@
 {
   "name": "@vtex/cli-plugin-whoami",
   "description": "vtex plugin whoami",
-  "version": "0.2.2-beta2",
+  "version": "0.2.2",
   "bugs": "https://github.com/vtex/cli-plugin-whoami/issues",
   "dependencies": {
     "@oclif/command": "^1",
