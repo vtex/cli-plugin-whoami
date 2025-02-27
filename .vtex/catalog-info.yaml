@@ -12,6 +12,7 @@ metadata:
     grafana/dashboard-selector: ""
     github.com/project-slug: vtex/cli-plugin-whoami
     backstage.io/techdocs-ref: dir:../
+    vtex.com/application-id: IKEFO4G5
 spec:
   lifecycle: stable
   owner: apps
