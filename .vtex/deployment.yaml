@@ -1,5 +1,5 @@
 - name: cli-plugin-whoami
-  referenceId: PLACEHOLDER
+  referenceId: IKEFO4G5
   build:
     provider: dkcicd
     pipelines:
